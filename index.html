@@ -31,11 +31,9 @@
                 display: flex;
                 flex-direction: column;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                /* background: linear-gradient(to bottom, rgb(14, 255, 10), rgb(255, 251, 0)) no-repeat; */
             }
 
             header {
-                /* position: relative; */
                 margin: 0;
                 top: 0;
                 left: 0;
@@ -51,7 +49,6 @@
             }
 
             header h1 {
-                /* position: absolute; */
                 color: white;
                 text-align: center;
                 font-size: 60px;
@@ -65,37 +62,14 @@
                 top: 0;
                 left: 0;
                 width: 100%;
-                /* height: 500px; */
-                /* min-height: 500px; */
                 max-height: 500px;
-                /* height: 500px; */
-                /* display: flex; */
-                /* flex-direction: column; */
-                /* justify-content: center; */
-                /* align-items: center; */
                 overflow: hidden;
             }
 
             #hero video {
-                /* position: absolute; */
-                /* float: left; */
-                /* margin: 0;
-                top: 0;
-                left: 0; */
                 width: 100%;
-                /* max-height: 500px; */
-                /* height: 500px; */
-                /* min-height: 500px; */
-                /* height: 100%; */
-                /* height: auto; */
-                /* overflow: hidden; */
-                /* opacity: 0.5; */
                 z-index: -1;
             }
-
-            /* .content_hero1 {
-
-            } */
 
             #hero h2 {
                 position: absolute;
@@ -120,12 +94,10 @@
                 margin: 0;
                 top: 0;
                 left: 0;
-                /* padding-bottom: 300px; */
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 100%;
-                /* height: 100px; */
+                width: 100;
                 color: white;
                 background: linear-gradient(to top, rgb(255, 242, 0), rgb(0, 0, 0)) no-repeat;
             }
@@ -134,7 +106,6 @@
             .nokia_features_ws, 
             .nokia_features_os {
                 position: relative;
-                /* position: absolute; */
                 margin: 30px;
                 top: 0;
                 left: 0;
@@ -143,26 +114,20 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                /* align-content: center; */
                 text-align: center;
                 width: 400px;
                 height: 200px;
-                /* background: linear-gradient(to bottom, rgb(28, 28, 29), rgb(85, 87, 88)) no-repeat; */
                 background: rgb(28, 28, 29);
                 box-shadow: 2px 2px 3px 3px rgba(28, 28, 29, 0.8);
                 border-radius: 15px;
                 overflow: hidden;
-                
                 transition: background 1.5s linear 0.5s;
-                
-                /* transition: tranform 1s ease-in-out; */
             }
 
             /* Efecto HOVER y TRANSICIÓN en las cajas de características del producto. */
             .nokia_features_cam:hover,
             .nokia_features_ws:hover,
             .nokia_features_os:hover {
-                /* background: linear-gradient(to bottom, rgb(255, 242, 0), rgb(85, 87, 88)) no-repeat; */
                 background: rgb(255, 242, 0);
                 transform: translateX(-5px) rotateX(-5deg) scale(1.07);
             }   
@@ -170,33 +135,27 @@
             /* PRIMERA COLUMNA */
             .nokia_features_cam .img1, .img2, .img3, .text1, .text2, .text3 {
                 position: absolute;
-                /* margin: 0;
-                top: 0;
-                left: 0; */
-                /* transform: translateY(10px); */
                 opacity: 0;
             }       
 
             .nokia_features_cam .img1 {
                 width: 400px;
                 overflow: hidden;
-                /* transition: opacity 2s ease-in-out; */
                 transform: scale(1.5) translateX(0);
                 animation: change_element1 15s ease-in-out infinite;
             }
 
             @keyframes change_element1 {
                 0% {opacity: 1;}
-                16.67% {opacity: 0; transform: scale(1.1) translateX(-30px);}
+                16.67% {opacity: 0; transform: scale(2.5) translateX(-20px);}
                 33.33% {opacity: 0;}
                 50% {opacity: 0;}
                 66.67% {opacity: 0;}
                 83.33% {opacity: 0;}
-                100% {opacity: 0; }
+                100% {opacity: 0;}
             }
 
             .nokia_features_cam .text1 {
-                /* transition: opacity 2s ease-in-out; */
                 animation: change_element2 15s ease-in-out infinite;
             }
 
@@ -212,23 +171,21 @@
 
             .nokia_features_cam .img2 {
                 width: 400px;
-                /* transition: opacity 2s ease-in-out; */
-                transform: translate(0, 0) scale(0.2);
+                transform: translate(0, -20px) scale(1.3);
                 animation: change_element3 15s ease-in-out infinite;
             }
 
             @keyframes change_element3 {
                 0% {opacity: 0;}
                 16.67% {opacity: 0;}
-                33.33% {opacity: 1; transform: translate(-30px) scale(1.2);}
-                50% {opacity: 0;}
+                33.33% {opacity: 1;}
+                50% {opacity: 0; transform: translate(-50px) scale(2.1);}
                 66.67% {opacity: 0;}
                 83.33% {opacity: 0;}
                 100% {opacity: 0;}
             }
 
             .nokia_features_cam .text2 {
-                /* transition: opacity 2s ease-in-out; */
                 animation: change_element4 15s ease-in-out infinite;
             }
 
@@ -244,7 +201,7 @@
 
             .nokia_features_cam .img3 {
                 width: 400px;
-                /* transition: opacity 2s ease-in-out; */
+                transform: translate(0, 0) scale(1.6);
                 animation: change_element5 15s ease-in-out infinite;
             }
 
@@ -252,14 +209,13 @@
                 0% {opacity: 0;}
                 16.67% {opacity: 0;}
                 33.33% {opacity: 0;}
-                50% {opacity: 0; transform: translate(10px, 20px) scale(1.3);}
+                50% {opacity: 0;}
                 66.67% {opacity: 1;}
-                83.33% {opacity: 0;}
+                83.33% {opacity: 0; transform: translate(10px, 20px) scale(1.2);}
                 100% {opacity: 0;}
             }
 
             .nokia_features_cam .text3 {
-                /* transition: opacity 2s ease-in-out; */
                 animation: change_element6 15s ease-in-out infinite;
             }
 
@@ -274,26 +230,51 @@
             }
 
             /* SEGUNDA COLUMNA */
-            .nokia_features_ws .img1, .img2, .img3, .text1, .text2, .text3 {
+            .nokia_features_ws .img1, .text1 {
                 position: absolute;
-                /* margin: 0;
-                top: 0;
-                left: 0; */
-                /* width: 100%; */
-                /* transform: translateY(10px); */
                 opacity: 0;
             }       
 
             .nokia_features_ws .img1 {
-                width: 400px;
-                /* transition: opacity 2s ease-in-out; */
-                transform: translate(0, 0) scale(1);
-                animation: change_element1_2 15s ease-in-out infinite;
+                width: 250px;
+                transform: translateX(0px);
+                animation: change_element1_2 9s ease-in-out infinite alternate;
             }
 
             @keyframes change_element1_2 {
                 0% {opacity: 1;}
-                16.67% {opacity: 0; transform: translate(10px, 20px) scale(1.3);}
+                
+                /* 50% {opacity: 0;} */
+                
+                100% {opacity: 0; transform: translateX(10px) scale(1.1);}
+            }
+
+            .nokia_features_ws .text1 {
+                animation: change_element2_2 9s ease-in-out infinite alternate;
+            }
+
+            @keyframes change_element2_2 {
+                0% {opacity: 0;}
+        
+                100% {opacity: 1;}
+            }
+
+
+            /* TERCERA COLUMNA */
+            .nokia_features_os .img1, .img2, .text1, .text2, .text3 {
+                position: absolute;
+                opacity: 0;
+            }       
+
+            .nokia_features_os .img1 {
+                width: 400px;
+                transform: translate(0, 0) scale(1.1);
+                animation: change_element1_3 15s ease-in-out infinite;
+            }
+
+            @keyframes change_element1_3 {
+                0% {opacity: 1;}
+                16.67% {opacity: 0; transform: translate(10px, 20px) scale(1.4);}
                 33.33% {opacity: 0;}
                 50% {opacity: 0;}
                 66.67% {opacity: 0;}
@@ -301,12 +282,11 @@
                 100% {opacity: 0;}
             }
 
-            .nokia_features_ws .text1 {
-                /* transition: opacity 2s ease-in-out; */
-                animation: change_element2_2 15s ease-in-out infinite;
+            .nokia_features_os .text1 {
+                animation: change_element2_3 15s ease-in-out infinite;
             }
 
-            @keyframes change_element2_2 {
+            @keyframes change_element2_3 {
                 0% {opacity: 0;}
                 16.67% {opacity: 1;}
                 33.33% {opacity: 0;}
@@ -316,14 +296,13 @@
                 100% {opacity: 0;}
             }
 
-            .nokia_features_ws .img2 {
+            .nokia_features_os .img2 {
                 width: 400px;
-                /* transition: opacity 2s ease-in-out; */
                 transform: translate(0, 10px) scale(0.9);
-                animation: change_element3_2 15s ease-in-out infinite;
+                animation: change_element3_3 15s ease-in-out infinite;
             }
 
-            @keyframes change_element3_2 {
+            @keyframes change_element3_3 {
                 0% {opacity: 0;}
                 16.67% {opacity: 0; transform: translate(10px, 30px) scale(1.7);}
                 33.33% {opacity: 1;}
@@ -333,12 +312,11 @@
                 100% {opacity: 0;}
             }
 
-            .nokia_features_ws .text2 {
-                /* transition: opacity 2s ease-in-out; */
-                animation: change_element4_2 15s ease-in-out infinite;
+            .nokia_features_os .text2 {
+                animation: change_element4_3 15s ease-in-out infinite;
             }
 
-            @keyframes change_element4_2 {
+            @keyframes change_element4_3 {
                 0% {opacity: 0;}
                 16.67% {opacity: 0;}
                 33.33% {opacity: 0;}
@@ -348,14 +326,12 @@
                 100% {opacity: 0;}
             }
 
-        
-
-            .nokia_features_ws .text3 {
-                /* transition: opacity 2s ease-in-out; */
-                animation: change_element5_2 15s ease-in-out infinite;
+            .nokia_features_os .text3 {
+                padding: 20px;
+                animation: change_element5_3 15s ease-in-out infinite;
             }
 
-            @keyframes change_element5_2 {
+            @keyframes change_element5_3 {
                 0% {opacity: 0;}
                 16.67% {opacity: 0;}
                 33.33% {opacity: 0;}
@@ -364,51 +340,9 @@
                 83.33% {opacity: 1;}
                 100% {opacity: 0;}
             }
-    
-
-
-            /* TERCERA COLUMNA */
-            .nokia_features_os .img1, .text1 {
-                position: absolute;
-                /* margin: 0;
-                top: 0;
-                left: 0; */
-                /* width: 100%; */
-                /* transform: translateY(10px); */
-                opacity: 0;
-            }       
-
-            .nokia_features_os .img1 {
-                width: 250px;
-                /* transition: opacity 2s ease-in-out; */
-                animation: change_element1_3 9s ease-in-out infinite alternate;
-            }
-
-            @keyframes change_element1_3 {
-                0% {opacity: 1;}
-                
-                /* 50% {opacity: 0;} */
-                
-                100% {opacity: 0;}
-            }
-
-            .nokia_features_os .text1 {
-                /* transition: opacity 2s ease-in-out; */
-                animation: change_element2_3 9s ease-in-out infinite alternate;
-            }
-
-            @keyframes change_element2_3 {
-                0% {opacity: 0;}
-               
-                /* 50% {opacity: 1;} */
-               
-                100% {opacity: 1;}
-            }
-
             
 
             footer {
-                /* margin: 0; */
                 width: 100%;
                 background: linear-gradient(to right, rgb(22, 10, 255), rgb(14, 255, 10)) no-repeat;
                 padding: 30px;
@@ -442,15 +376,15 @@
                 <h2 class="text3">Trasera: 41 Mpx, flash LED</h2>
             </div>
             <div class="nokia_features_ws">
+                <img class="img1" src="./nokia_7.jpg" alt="">
+                <h2 class="text1">Windows Phone 8.1</h2>
+            </div>
+            <div class="nokia_features_os">
                 <img class="img1" src="./nokia_4.jpg" alt="">
                 <h2 class="text1">Watershot</h2>
                 <img class="img2" src="./nokia_5.jpg" alt="">
                 <h2 class="text2">Carcasa de metal</h2>
                 <h2 class="text3">Soporta 328 pies bajo el mar</h2>
-            </div>
-            <div class="nokia_features_os">
-                <img class="img1" src="./nokia_7.jpg" alt="">
-                <h2 class="text1">Windows Phone 8.1</h2>
             </div>
         </section>
         <footer>&copy; Nokia Lumia 1020</footer>
